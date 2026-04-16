@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Analytics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen py-10 px-4">
+    <main class="max-w-2xl mx-auto space-y-6">
+        
+        <header class="text-center pb-4">
+            <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Pesquisa de Público</h1>
+            <p class="text-slate-500 mt-2">Colete e analise o feedback do filme em tempo real</p>
+        </header>
+
+        <section class="bg-white rounded-2xl shadow-xl shadow-slate-200/60 p-8 border border-slate-100">
+            <form id="form-pesquisa" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="sm:col-span-2">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="font-bold text-slate-800">Nova Avaliação</h2>
+                        <span id="progresso" class="text-xs font-bold bg-blue-50 text-blue-600 px-3 py-1 rounded-full">0 / 45</span>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Idade</label>
+                    <input type="number" id="input-idade" required min="1" max="120"
+                        class="w-full bg-slate-50 border-none rounded-xl p-3 focus:ring-2 focus:ring-blue-500 transition-all">
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Gênero</label>
+                    <select id="input-genero" required
+                        class="w-full bg-slate-50 border-none rounded-xl p-3 focus:ring-2 focus:ring-blue-500 transition-all">
+                        <option value="">Escolha...</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+
+                <div class="sm:col-span-2 space-y-2">
+                    <label class="text-xs font-bold uppercase tracking-wider text-slate-400">Avaliação do Filme</label>
+                    <select id="input-opiniao" required
+                        class="w-full bg-slate-50 border-none rounded-xl p-3 focus:ring-2 focus:ring-blue-500 transition-all">
+                        <option value="">Selecione sua nota</option>
+                        <option value="4">⭐⭐⭐⭐ (Ótimo)</option>
+                        <option value="3">⭐⭐⭐ (Bom)</option>
+                        <option value="2">⭐⭐ (Regular)</option>
+                        <option value="1">⭐ (Péssimo)</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn-enviar"
+                    class="sm:col-span-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-blue-200 transition-all transform active:scale-[0.98]">
+                    Confirmar Registro
+                </button>
+            </form>
+        </section>
+
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm">
+                <p class="text-[10px] font-bold text-slate-400 uppercase">Média Idade</p>
+                <p id="res-media" class="text-xl font-extrabold text-slate-800">-</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm">
+                <p class="text-[10px] font-bold text-slate-400 uppercase">Mais Velho</p>
+                <p id="res-velho" class="text-xl font-extrabold text-slate-800">-</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm">
+                <p class="text-[10px] font-bold text-slate-400 uppercase">Mais Novo</p>
+                <p id="res-novo" class="text-xl font-extrabold text-slate-800">-</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm">
+                <p class="text-[10px] font-bold text-slate-400 uppercase">Péssimos</p>
+                <p id="res-pessimo" class="text-xl font-extrabold text-red-500">-</p>
+            </div>
+        </section>
+
+        <section class="bg-slate-900 rounded-2xl p-6 text-white flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <p class="text-slate-400 text-sm">Aprovação (Ótimo/Bom)</p>
+                <p id="res-aprovacao" class="text-4xl font-black text-blue-400">-%</p>
+            </div>
+            <div class="flex gap-4 w-full md:w-auto">
+                <div class="flex-1 bg-slate-800 p-3 rounded-xl text-center border border-slate-700">
+                    <span class="block text-[10px] text-slate-500 uppercase">Homens</span>
+                    <span id="count-h" class="text-lg font-bold">0</span>
+                </div>
+                <div class="flex-1 bg-slate-800 p-3 rounded-xl text-center border border-slate-700">
+                    <span class="block text-[10px] text-slate-500 uppercase">Mulheres</span>
+                    <span id="count-m" class="text-lg font-bold">0</span>
+                </div>
+                <div class="flex-1 bg-slate-800 p-3 rounded-xl text-center border border-slate-700">
+                    <span class="block text-[10px] text-slate-500 uppercase">Outros</span>
+                    <span id="count-o" class="text-lg font-bold">0</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
