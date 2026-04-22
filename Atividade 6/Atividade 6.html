@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Triângulo - Atividade 6</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 350px;
+            text-align: center;
+        }
+        h2 { color: #1a73e8; margin-bottom: 1.5rem; }
+        .input-group { margin-bottom: 1rem; text-align: left; }
+        label { display: block; font-size: 0.9rem; color: #555; margin-bottom: 5px; }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        input:focus { border-color: #1a73e8; outline: none; }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover { background: #1557b0; }
+        #resultado {
+            margin-top: 1.5rem;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: none;
+        }
+        .sucesso { background: #e8f0fe; color: #1967d2; border: 1px solid #d2e3fc; }
+        .erro { background: #fce8e6; color: #c5221f; border: 1px solid #fad2cf; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Verificador de Triângulo</h2>
+    <div class="input-group">
+        <label>Lado A</label>
+        <input type="number" id="ladoA" placeholder="Ex: 10">
+    </div>
+    <div class="input-group">
+        <label>Lado B</label>
+        <input type="number" id="ladoB" placeholder="Ex: 10">
+    </div>
+    <div class="input-group">
+        <label>Lado C</label>
+        <input type="number" id="ladoC" placeholder="Ex: 10">
+    </div>
+    <button onclick="validarTriangulo()">Verificar Tipo</button>
+    <div id="resultado"></div>
+</div>
+
+<script src="atividade 6.js"></script>
+
+</body>
+</html>
