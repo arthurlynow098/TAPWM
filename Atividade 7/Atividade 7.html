@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>JS - Atividade 7</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #1e293b; padding: 2rem; }
+        .dashboard { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.5rem; }
+        .header { grid-column: 1 / -1; text-align: center; margin-bottom: 2rem; }
+        .card { background: white; padding: 1.5rem; border-radius: 12px; border: 1px solid #e2e8f0; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        h3 { margin-top: 0; color: #3b82f6; border-bottom: 2px solid #eff6ff; padding-bottom: 8px; }
+        .controls { display: flex; gap: 8px; margin: 15px 0; flex-wrap: wrap; }
+        input { padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; flex: 1; min-width: 80px; }
+        button { padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius: 6px; cursor: pointer; }
+        button:hover { background: #2563eb; }
+        .res { font-size: 0.9rem; font-weight: 600; color: #64748b; padding: 8px; background: #f1f5f9; border-radius: 4px; min-height: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Dashboard de Funções JavaScript</h1>
+    <p>Atividade 7</p>
+</div>
+
+<div class="dashboard">
+    <div class="card">
+        <h3>1. O Maior de Três</h3>
+        <div class="controls">
+            <input type="number" id="m1" placeholder="N1">
+            <input type="number" id="m2" placeholder="N2">
+            <input type="number" id="m3" placeholder="N3">
+            <button onclick="calcMaior()">OK</button>
+        </div>
+        <div id="res1" class="res">Aguardando...</div>
+    </div>
+
+    <div class="card">
+        <h3>2. Ordem Crescente</h3>
+        <div class="controls">
+            <input type="number" id="o1" placeholder="N1">
+            <input type="number" id="o2" placeholder="N2">
+            <input type="number" id="o3" placeholder="N3">
+            <button onclick="calcOrdem()">OK</button>
+        </div>
+        <div id="res2" class="res">Aguardando...</div>
+    </div>
+
+    <div class="card">
+        <h3>3. Verificador de Palíndromo</h3>
+        <div class="controls">
+            <input type="text" id="palTxt" placeholder="Frase ou palavra">
+            <button onclick="calcPalindromo()">Verificar</button>
+        </div>
+        <div id="res3" class="res">Aguardando...</div>
+    </div>
+
+    <div class="card">
+        <h3>4. Busca de Subconjunto</h3>
+        <div class="controls">
+            <input type="text" id="p1" placeholder="Palavra 1">
+            <input type="text" id="p2" placeholder="Palavra 2">
+            <button onclick="calcSub()">Buscar</button>
+        </div>
+        <div id="res4" class="res">Aguardando...</div>
+    </div>
+
+    <div class="card" style="grid-column: 1 / -1">
+        <h3>5. Qual o dia da semana?</h3>
+        <div class="controls">
+            <input type="date" id="dataInput">
+            <button onclick="calcDia()">Verificar Data</button>
+        </div>
+        <div id="res5" class="res">Aguardando...</div>
+    </div>
+</div>
+
+<script src="atividade 7.js"></script>
+
+</body>
+</html>
