@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - 11</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eaeef3;
+            color: #333;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        fieldset {
+            border: 1px solid #dcdde1;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #2980b9;
+            padding: 0 10px;
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 12px;
+        }
+
+        .campo label {
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .campo input {
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .campo input:focus {
+            border-color: #3498db;
+        }
+
+        .btn-executar {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        .btn-executar:hover {
+            background-color: #2980b9;
+        }
+
+        .painel-resultado {
+            margin-top: 15px;
+            padding: 12px;
+            background-color: #f1f2f6;
+            border-left: 4px solid #27ae60;
+            color: #2c3e50;
+            font-family: 'Courier New', Courier, monospace;
+            min-height: 45px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="card">
+        <h2>Atividade 1: Área do Retângulo</h2>
+        
+        <div class="campo">
+            <label for="valBase">Medida da Base:</label>
+            <input type="number" id="valBase" placeholder="Ex: 10">
+        </div>
+        
+        <div class="campo">
+            <label for="valAltura">Medida da Altura:</label>
+            <input type="number" id="valAltura" placeholder="Ex: 5">
+        </div>
+
+        <button class="btn-executar" id="btnCalculaArea">Processar Cálculo</button>
+
+        <div id="boxResultadoRetangulo" class="painel-resultado">Aguardando dados...</div>
+    </section>
+
+    <section class="card">
+        <h2>Atividade 2: Registro Bancário</h2>
+
+        <fieldset>
+            <legend>Abertura de Conta Corrente</legend>
+            <div class="campo"><label>Nome do Titular:</label><input type="text" id="inputNomeCC"></div>
+            <div class="campo"><label>Instituição Financeira:</label><input type="text" id="inputBancoCC"></div>
+            <div class="campo"><label>Nº da Conta:</label><input type="number" id="inputNumCC"></div>
+            <div class="campo"><label>Saldo Inicial (R$):</label><input type="number" id="inputSaldoCC"></div>
+            <div class="campo"><label>Cheque Especial (R$):</label><input type="number" id="inputLimiteCC"></div>
+            
+            <button class="btn-executar" id="btnCriarCC">Registrar Conta Corrente</button>
+            <div id="boxResultadoCC" class="painel-resultado">Nenhuma conta corrente registrada.</div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Abertura de Conta Poupança</legend>
+            <div class="campo"><label>Nome do Titular:</label><input type="text" id="inputNomeCP"></div>
+            <div class="campo"><label>Instituição Financeira:</label><input type="text" id="inputBancoCP"></div>
+            <div class="campo"><label>Nº da Conta:</label><input type="number" id="inputNumCP"></div>
+            <div class="campo"><label>Saldo Inicial (R$):</label><input type="number" id="inputSaldoCP"></div>
+            <div class="campo"><label>Rendimento Mensal (%):</label><input type="number" id="inputTaxaCP"></div>
+            <div class="campo"><label>Dia do Vencimento:</label><input type="text" id="inputVencCP"></div>
+            
+            <button class="btn-executar" id="btnCriarCP">Registrar Conta Poupança</button>
+            <div id="boxResultadoCP" class="painel-resultado">Nenhuma conta poupança registrada.</div>
+        </fieldset>
+    </section>
+
+    <script>
+        class EstruturaRetangular {
+            constructor(valorB, valorA) {
+                this.medidaBase = parseFloat(valorB);
+                this.medidaAltura = parseFloat(valorA);
+            }
+
+            obterSuperficie() {
+                return this.medidaBase * this.medidaAltura;
+            }
+        }
+
+        document.querySelector('#btnCalculaArea').addEventListener('click', () => {
+            const b = document.querySelector('#valBase').value;
+            const a = document.querySelector('#valAltura').value;
+            
+            if (b && a) {
+                const figura = new EstruturaRetangular(b, a);
+                document.querySelector('#boxResultadoRetangulo').textContent = `Resultado: A área calculada é ${figura.obterSuperficie()}`;
+            } else {
+                document.querySelector('#boxResultadoRetangulo').textContent = `Por favor, preencha ambos os campos.`;
+            }
+        });
+
+        class RegistroConta {
+            constructor(t, b, n, s) {
+                this.titular = t;
+                this.banco = b;
+                this.conta = n;
+                this.saldoAtual = parseFloat(s);
+            }
+        }
+
+        class CorrentePF extends RegistroConta {
+            constructor(t, b, n, s, lim) {
+                super(t, b, n, s);
+                this.limiteExtra = parseFloat(lim);
+            }
+
+            gerarExtrato() {
+                return `[CC] Titular: ${this.titular} | Bco: ${this.banco} | Cta: ${this.conta} | Saldo: R$${this.saldoAtual.toFixed(2)} | Limite: R$${this.limiteExtra.toFixed(2)}`;
+            }
+        }
+
+        class PoupancaPF extends RegistroConta {
+            constructor(t, b, n, s, tx, venc) {
+                super(t, b, n, s);
+                this.indiceRendimento = parseFloat(tx);
+                this.diaVencimento = venc;
+            }
+
+            gerarExtrato() {
+                return `[CP] Titular: ${this.titular} | Bco: ${this.banco} | Cta: ${this.conta} | Saldo: R$${this.saldoAtual.toFixed(2)} | Rendimento: ${this.indiceRendimento}% | Venc: ${this.diaVencimento}`;
+            }
+        }
+
+        document.querySelector('#btnCriarCC').addEventListener('click', () => {
+            const novaCC = new CorrentePF(
+                document.querySelector('#inputNomeCC').value,
+                document.querySelector('#inputBancoCC').value,
+                document.querySelector('#inputNumCC').value,
+                document.querySelector('#inputSaldoCC').value,
+                document.querySelector('#inputLimiteCC').value
+            );
+
+            document.querySelector('#boxResultadoCC').textContent = novaCC.gerarExtrato();
+        });
+
+        document.querySelector('#btnCriarCP').addEventListener('click', () => {
+            const novaCP = new PoupancaPF(
+                document.querySelector('#inputNomeCP').value,
+                document.querySelector('#inputBancoCP').value,
+                document.querySelector('#inputNumCP').value,
+                document.querySelector('#inputSaldoCP').value,
+                document.querySelector('#inputTaxaCP').value,
+                document.querySelector('#inputVencCP').value
+            );
+
+            document.querySelector('#boxResultadoCP').textContent = novaCP.gerarExtrato();
+        });
+    </script>
+</body>
+</html>
