@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação de Imagem</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #eaeef3;
+        }
+
+        .cartao-interativo {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #imgInterativa {
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        #imgInterativa:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cartao-interativo">
+        <img src="janelafechada.png" id="imgInterativa" alt="Janela Interativa">
+    </div>
+
+    <script>
+        const elementoJanela = document.querySelector('#imgInterativa');
+        let statusInutilizavel = false;
+
+        elementoJanela.addEventListener('mouseenter', () => {
+            if (!statusInutilizavel) {
+                elementoJanela.src = "janelaberta.png";
+            }
+        });
+
+        elementoJanela.addEventListener('mouseleave', () => {
+            if (!statusInutilizavel) {
+                elementoJanela.src = "janelafechada.png";
+            }
+        });
+
+        elementoJanela.addEventListener('click', () => {
+            if (!statusInutilizavel) {
+                elementoJanela.src = "janelaquebrada.jpg";
+                statusInutilizavel = true;
+                elementoJanela.style.cursor = "default";
+                elementoJanela.style.transform = "none";
+            }
+        });
+    </script>
+</body>
+</html>
