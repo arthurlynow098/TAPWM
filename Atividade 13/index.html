@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13</title>
+</head>
+<body>
+
+    <h2>Atividade 13 - Transformação de Texto</h2>
+
+    <!-- Input Text -->
+    <label for="inputText">Digite seu texto:</label>
+    <input type="text" id="inputText" oninput="transformarTexto()">
+
+    <br><br>
+
+    <!-- 1º RadioButton: Maiúsculas -->
+    <input type="radio" id="radioMaiuscula" name="formatoTexto" onchange="transformarTexto()">
+    <label for="radioMaiuscula">Maiúsculas</label>
+
+    <br>
+
+    <!-- 2º RadioButton: Minúsculas -->
+    <input type="radio" id="radioMinuscula" name="formatoTexto" onchange="transformarTexto()">
+    <label for="radioMinuscula">Minúsculas</label>
+
+    <script>
+        function transformarTexto() {
+            let campoTexto = document.getElementById("inputText");
+            let opcMaiuscula = document.getElementById("radioMaiuscula");
+            let opcMinuscula = document.getElementById("radioMinuscula");
+
+            if (opcMaiuscula.checked) {
+                campoTexto.value = campoTexto.value.toUpperCase();
+            } else if (opcMinuscula.checked) {
+                campoTexto.value = campoTexto.value.toLowerCase();
+            }
+        }
+    </script>
+
+</body>
+</html>
