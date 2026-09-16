@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Semana de Tecnologia</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #2d3748;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            margin-bottom: 8px;
+        }
+
+        .alert-info {
+            background-color: #f0fdf4;
+            color: #166534;
+            border: 1px solid #bbf7d0;
+            padding: 10px 14px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        form {
+            display: grid;
+            gap: 16px;
+            max-width: 480px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 24px;
+            border-radius: 8px;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        input,
+        select,
+        button {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+        }
+
+        button {
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.2s;
+            margin-top: 8px;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Inscrição em Atividades</h1>
+    <div class="alert-info">
+        Formulário demonstrativo de cadastro. Os dados enviados são processados em ambiente de desenvolvimento.
+    </div>
+
+    <form>
+        <label>Nome Completo:
+            <input type="text" name="nome" placeholder="Ex: Arthur Mendes" required>
+        </label>
+
+        <label>E-mail:
+            <input type="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </label>
+
+        <label>Atividade Desejada:
+            <select name="atividade">
+                <option>Palestra de Node.js</option>
+                <option>Workshop de Git e GitHub</option>
+                <option>Segurança em Aplicações Web</option>
+            </select>
+        </label>
+
+        <button type="button">Confirmar Inscrição</button>
+    </form>
+
+    <p style="margin-top: 24px;"><a href="/">&larr; Voltar para a página inicial</a></p>
+</body>
+
+</html>

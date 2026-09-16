@@ -1,0 +1,5 @@
+module.exports = (app) => {
+    app.get('/programacao', (req, res) => {
+        res.render('evento/programacao');
+    });
+};
