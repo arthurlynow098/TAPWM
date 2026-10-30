@@ -1,37 +1,33 @@
 <p align="center">
-  <img src="assets/banner-v2.png" alt="TAPWM" width="100%">
+  <img src="assets/identity/banner.png" alt="TAPWM" width="100%">
 </p>
 
 <p align="center">Atividades de programação web: DOM, eventos, código assíncrono e aplicações com Express.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="JavaScript · Node.js · Express" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <a id="explore-o-projeto"></a>
 
-![Explore o projeto](assets/docs/section-01.svg)
+## Por onde começar
 
-![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-<table width="100%">
-<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
-<tr><td><strong>Navegador</strong></td><td>Exemplo inicial de atividade web.</td><td><a href="Atividade%2010/index.html">Abrir navegador →</a></td></tr>
-<tr><td><strong>Assíncrono</strong></td><td>Exercícios de JavaScript assíncrono.</td><td><a href="Atividade%2017">Abrir assíncrono →</a></td></tr>
-<tr><td><strong>Servidor</strong></td><td>Aplicação Node.js da atividade 18.</td><td><a href="Atividade%2018/app.js">Abrir servidor →</a></td></tr>
-</table>
+- **[Navegador](Atividade%2010/index.html)** — Exemplo inicial de atividade web.
+- **[Assíncrono](Atividade%2017)** — Exercícios de JavaScript assíncrono.
+- **[Servidor](Atividade%2018/app.js)** — Aplicação Node.js da atividade 18.
+
 
 <a id="visão-geral"></a>
 
-![Visão geral](assets/docs/section-02.svg)
+## Visão geral
 
 O repositório **TAPWM** reúne a coleção progressiva de projetos práticos desenvolvidos ao longo da disciplina de programação web na **Fatec Sorocaba**. A estrutura de pastas acompanha a evolução técnica do curso: começa com lógica, objetos e eventos interativos no navegador (Atividades 10 a 15), avança para programação assíncrona com *Callbacks* e *Promises* em JavaScript (Atividade 17) e culmina na construção de aplicações servidoras com **Node.js, Express e views EJS** (Atividades 18 em diante).
 
 <a id="principais-módulos-e-atividades"></a>
 
-![Principais módulos e atividades](assets/docs/section-03.svg)
+## Principais módulos e atividades
 
 | Atividade | Foco técnico implementado |
 |---|---|
@@ -58,7 +54,7 @@ flowchart LR
 ```text
 TAPWM/
 ├── assets/
-│   └── banner-v2.png               Banner do projeto
+│   └── identity/banner.png               Banner do projeto
 ├── Atividade 10/ a Atividade 15/   Páginas interativas em HTML, CSS e JavaScript
 ├── Atividade 17/                   Exercícios de Callbacks e Promises para Node.js
 ├── Atividade 18/ & Atividade 19/   Aplicações web em Node.js, Express e EJS
@@ -69,7 +65,7 @@ TAPWM/
 
 <a id="como-executar"></a>
 
-![Como executar](assets/docs/section-04.svg)
+## Como executar
 
 ### Atividades Front-End (10 a 15)
 Abra o arquivo index.html da atividade desejada diretamente no navegador.
@@ -82,7 +78,7 @@ npm install
 npm start
 ```
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
