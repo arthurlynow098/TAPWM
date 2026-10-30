@@ -4,7 +4,7 @@
 
 <p align="center">Atividades de programação web: DOM, eventos, código assíncrono e aplicações com Express.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="JavaScript · Node.js · Express" width="72%"></p>
+<p align="center"><img src="assets/docs/tags.svg" alt="JavaScript · Node.js · Express" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
@@ -16,11 +16,12 @@
 
 ![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-| Área | O que você encontra | Acesso direto |
-|---|---|---|
-| **Navegador** | Exemplo inicial de atividade web. | [Abrir navegador →](Atividade%2010/index.html) |
-| **Assíncrono** | Exercícios de JavaScript assíncrono. | [Abrir assíncrono →](Atividade%2017) |
-| **Servidor** | Aplicação Node.js da atividade 18. | [Abrir servidor →](Atividade%2018/app.js) |
+<table width="100%">
+<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
+<tr><td><strong>Navegador</strong></td><td>Exemplo inicial de atividade web.</td><td><a href="Atividade%2010/index.html">Abrir navegador →</a></td></tr>
+<tr><td><strong>Assíncrono</strong></td><td>Exercícios de JavaScript assíncrono.</td><td><a href="Atividade%2017">Abrir assíncrono →</a></td></tr>
+<tr><td><strong>Servidor</strong></td><td>Aplicação Node.js da atividade 18.</td><td><a href="Atividade%2018/app.js">Abrir servidor →</a></td></tr>
+</table>
 
 <a id="visão-geral"></a>
 
