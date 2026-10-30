@@ -4,21 +4,33 @@
 
 <p align="center">Atividades de programação web: DOM, eventos, código assíncrono e aplicações com Express.</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-C52E36?style=flat-square" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Node.js-24272E?style=flat-square" alt="Node.js">
-  <img src="https://img.shields.io/badge/Express-24272E?style=flat-square" alt="Express">
-</p>
+<p align="center"><img src="assets/docs/tags.svg" alt="JavaScript · Node.js · Express" width="72%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
 ---
 
-## Visão geral
+<a id="explore-o-projeto"></a>
+
+![Explore o projeto](assets/docs/section-01.svg)
+
+![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
+
+| Área | O que você encontra | Acesso direto |
+|---|---|---|
+| **Navegador** | Exemplo inicial de atividade web. | [Abrir navegador →](Atividade%2010/index.html) |
+| **Assíncrono** | Exercícios de JavaScript assíncrono. | [Abrir assíncrono →](Atividade%2017) |
+| **Servidor** | Aplicação Node.js da atividade 18. | [Abrir servidor →](Atividade%2018/app.js) |
+
+<a id="visão-geral"></a>
+
+![Visão geral](assets/docs/section-02.svg)
 
 O repositório **TAPWM** reúne a coleção progressiva de projetos práticos desenvolvidos ao longo da disciplina de programação web na **Fatec Sorocaba**. A estrutura de pastas acompanha a evolução técnica do curso: começa com lógica, objetos e eventos interativos no navegador (Atividades 10 a 15), avança para programação assíncrona com *Callbacks* e *Promises* em JavaScript (Atividade 17) e culmina na construção de aplicações servidoras com **Node.js, Express e views EJS** (Atividades 18 em diante).
 
-## Principais módulos e atividades
+<a id="principais-módulos-e-atividades"></a>
+
+![Principais módulos e atividades](assets/docs/section-03.svg)
 
 | Atividade | Foco técnico implementado |
 |---|---|
@@ -45,7 +57,7 @@ flowchart LR
 ```text
 TAPWM/
 ├── assets/
-│   └── project-animal.png          Emblema do projeto
+│   └── banner-v2.png               Banner do projeto
 ├── Atividade 10/ a Atividade 15/   Páginas interativas em HTML, CSS e JavaScript
 ├── Atividade 17/                   Exercícios de Callbacks e Promises para Node.js
 ├── Atividade 18/ & Atividade 19/   Aplicações web em Node.js, Express e EJS
@@ -54,7 +66,9 @@ TAPWM/
 
 </details>
 
-## Como executar
+<a id="como-executar"></a>
+
+![Como executar](assets/docs/section-04.svg)
 
 ### Atividades Front-End (10 a 15)
 Abra o arquivo index.html da atividade desejada diretamente no navegador.
