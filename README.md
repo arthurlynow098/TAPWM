@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="assets/project-animal.png" alt="Emblema de TAPWM" width="144" height="144">
+  <img src="assets/banner-v2.png" alt="TAPWM" width="100%">
 </p>
-
-<h1 align="center">TAPWM</h1>
 
 <p align="center">Atividades de programação web: DOM, eventos, código assíncrono e aplicações com Express.</p>
 
