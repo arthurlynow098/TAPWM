@@ -1,5 +1,9 @@
 <a id="top"></a>
 
+<p align="center"><sub>TAPWM</sub></p>
+
+---
+
 <p align="center"><img src="assets/identity-v2/banner.png" alt="Programação Web" width="100%"></p>
 
 <p align="center">Atividades de programação web, DOM, eventos, código assíncrono e aplicações com Express.</p>
@@ -10,35 +14,29 @@
 <img alt="Express" src="https://img.shields.io/badge/Express-1AA6AD?style=for-the-badge&amp;logo=github&amp;logoColor=white">
 </p>
 
-
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
-
 
 <a id="explore-o-projeto"></a>
 
 <a id="por-onde-começar"></a>
 
-<p><img src="assets/identity-v2/section-01.svg" alt="Por onde começar" width="100%"></p>
-
+## Por onde começar
 
 - **[Navegador](Atividade%2010/index.html)**, exemplo inicial de atividade web.
 - **[Assíncrono](Atividade%2017)**, exercícios de JavaScript assíncrono.
 - **[Servidor](Atividade%2018/app.js)**, aplicação Node.js da atividade 18.
 
-
 <a id="visão-geral"></a>
 
 <a id="sobre-o-projeto"></a>
 
-<p><img src="assets/identity-v2/section-02.svg" alt="Sobre o projeto" width="100%"></p>
+## Sobre o projeto
 
 O repositório **TAPWM** reúne a coleção progressiva de projetos práticos desenvolvidos ao longo da disciplina de programação web na **Fatec Sorocaba**. A estrutura de pastas acompanha a evolução técnica do curso, começa com lógica, objetos e eventos interativos no navegador (Atividades 10 a 15), avança para programação assíncrona com *Callbacks* e *Promises* em JavaScript (Atividade 17) e culmina na construção de aplicações servidoras com **Node.js, Express e views EJS** (Atividades 18 em diante).
 
 <a id="principais-módulos-e-atividades"></a>
 
-
-
-<p><img src="assets/identity-v2/section-03.svg" alt="Principais módulos e atividades" width="100%"></p>
+## Principais módulos e atividades
 
 | Atividade | Foco técnico implementado |
 |---|---|
@@ -50,8 +48,7 @@ O repositório **TAPWM** reúne a coleção progressiva de projetos práticos de
 
 <a id="arquitetura-da-trilha"></a>
 
-<p><img src="assets/identity-v2/section-04.svg" alt="Arquitetura da trilha" width="100%"></p>
-
+## Arquitetura da trilha
 
 ```mermaid
 flowchart LR
@@ -59,11 +56,9 @@ flowchart LR
     B --> C["Atividades 18–19+ · Node.js + Express + EJS"]
 ```
 
-
 <a id="estrutura-do-repositório"></a>
 
-<p><img src="assets/identity-v2/section-05.svg" alt="Estrutura do repositório" width="100%"></p>
-
+## Estrutura do repositório
 
 ```text
 TAPWM/
@@ -75,12 +70,9 @@ TAPWM/
 └── README.md
 ```
 
-
 <a id="como-executar"></a>
 
-
-
-<p><img src="assets/identity-v2/section-06.svg" alt="Como executar" width="100%"></p>
+## Como executar
 
 ### Atividades Front-End (10 a 15)
 Abra o arquivo index.html da atividade desejada diretamente no navegador.
@@ -93,17 +85,15 @@ npm install
 npm start
 ```
 
-
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
   <a href="https://arthurentsev.vercel.app/">Portfólio</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/entsevarthur/">LinkedIn</a>
 </p>
 
-
 <a id="identidade-e-créditos"></a>
 
-<p><img src="assets/identity-v2/section-07.svg" alt="Identidade e créditos" width="100%"></p>
+## Identidade e créditos
 
 <table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Aranha" width="130"></td><td><strong>Aranha</strong><br>Construção de conexões, em referência à web.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/identity-v2/banner.png">Banner em PNG</a></td></tr></table>
 
