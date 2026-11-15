@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-<p align="center"><img src="assets/banner.png" alt="Programação Web" width="100%"></p>
+<p align="center"><img src="assets/identity-v2/banner.png" alt="Programação Web" width="100%"></p>
 
 <p align="center">Atividades de programação web, DOM, eventos, código assíncrono e aplicações com Express.</p>
 
@@ -18,7 +18,7 @@
 
 <a id="por-onde-começar"></a>
 
-<p><img src="assets/secao-01.png" alt="Por onde começar" width="100%"></p>
+<p><img src="assets/identity-v2/section-01.svg" alt="Por onde começar" width="100%"></p>
 
 
 - **[Navegador](Atividade%2010/index.html)**, exemplo inicial de atividade web.
@@ -30,7 +30,7 @@
 
 <a id="sobre-o-projeto"></a>
 
-<p><img src="assets/secao-02.png" alt="Sobre o projeto" width="100%"></p>
+<p><img src="assets/identity-v2/section-02.svg" alt="Sobre o projeto" width="100%"></p>
 
 O repositório **TAPWM** reúne a coleção progressiva de projetos práticos desenvolvidos ao longo da disciplina de programação web na **Fatec Sorocaba**. A estrutura de pastas acompanha a evolução técnica do curso, começa com lógica, objetos e eventos interativos no navegador (Atividades 10 a 15), avança para programação assíncrona com *Callbacks* e *Promises* em JavaScript (Atividade 17) e culmina na construção de aplicações servidoras com **Node.js, Express e views EJS** (Atividades 18 em diante).
 
@@ -38,7 +38,7 @@ O repositório **TAPWM** reúne a coleção progressiva de projetos práticos de
 
 
 
-<p><img src="assets/secao-03.png" alt="Principais módulos e atividades" width="100%"></p>
+<p><img src="assets/identity-v2/section-03.svg" alt="Principais módulos e atividades" width="100%"></p>
 
 | Atividade | Foco técnico implementado |
 |---|---|
@@ -50,7 +50,7 @@ O repositório **TAPWM** reúne a coleção progressiva de projetos práticos de
 
 <a id="arquitetura-da-trilha"></a>
 
-<p><img src="assets/secao-04.png" alt="Arquitetura da trilha" width="100%"></p>
+<p><img src="assets/identity-v2/section-04.svg" alt="Arquitetura da trilha" width="100%"></p>
 
 
 ```mermaid
@@ -62,7 +62,7 @@ flowchart LR
 
 <a id="estrutura-do-repositório"></a>
 
-<p><img src="assets/secao-05.png" alt="Estrutura do repositório" width="100%"></p>
+<p><img src="assets/identity-v2/section-05.svg" alt="Estrutura do repositório" width="100%"></p>
 
 
 ```text
@@ -80,7 +80,7 @@ TAPWM/
 
 
 
-<p><img src="assets/secao-06.png" alt="Como executar" width="100%"></p>
+<p><img src="assets/identity-v2/section-06.svg" alt="Como executar" width="100%"></p>
 
 ### Atividades Front-End (10 a 15)
 Abra o arquivo index.html da atividade desejada diretamente no navegador.
@@ -103,9 +103,9 @@ npm start
 
 <a id="identidade-e-créditos"></a>
 
-<p><img src="assets/secao-07.png" alt="Identidade e créditos" width="100%"></p>
+<p><img src="assets/identity-v2/section-07.svg" alt="Identidade e créditos" width="100%"></p>
 
-<table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Aranha" width="130"></td><td><strong>Aranha</strong><br>Construção de conexões, em referência à web.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/banner.png">Banner em PNG</a></td></tr></table>
+<table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Aranha" width="130"></td><td><strong>Aranha</strong><br>Construção de conexões, em referência à web.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/identity-v2/banner.png">Banner em PNG</a></td></tr></table>
 
 Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação, [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
 
