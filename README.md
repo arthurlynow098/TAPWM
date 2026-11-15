@@ -97,6 +97,6 @@ npm start
 
 <table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Aranha" width="130"></td><td><strong>Aranha</strong><br>Construção de conexões, em referência à web.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/identity-v2/banner.png">Banner em PNG</a></td></tr></table>
 
-Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação, [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
+A gravura do banner é a tarântula de Carl Wilhelm Hahn, de 1833, em domínio público no [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AHahn_1833_Die_Arachniden_fig._73a_Lycosa_tarantula.jpg).
 
 <p align="center"><a href="#top">Voltar ao topo ↑</a> · <a href="https://github.com/arthurlynow098">Arthur Entsev</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a></p>
