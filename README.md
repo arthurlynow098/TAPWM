@@ -2,7 +2,7 @@
 
 <p align="center"><img src="assets/identity-v2/banner.png" alt="Programação Web" width="100%"></p>
 
-<p align="center">Atividades de programação web: DOM, eventos, código assíncrono e aplicações com Express.</p>
+<p align="center">Atividades de programação web, DOM, eventos, código assíncrono e aplicações com Express.</p>
 
 <p align="center">
 <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-1AA6AD?style=for-the-badge&amp;logo=javascript&amp;logoColor=white">
@@ -21,9 +21,9 @@
 <p><img src="assets/identity-v2/section-01.svg" alt="Por onde começar" width="100%"></p>
 
 
-- **[Navegador](Atividade%2010/index.html)** — Exemplo inicial de atividade web.
-- **[Assíncrono](Atividade%2017)** — Exercícios de JavaScript assíncrono.
-- **[Servidor](Atividade%2018/app.js)** — Aplicação Node.js da atividade 18.
+- **[Navegador](Atividade%2010/index.html)**, exemplo inicial de atividade web.
+- **[Assíncrono](Atividade%2017)**, exercícios de JavaScript assíncrono.
+- **[Servidor](Atividade%2018/app.js)**, aplicação Node.js da atividade 18.
 
 
 <a id="visão-geral"></a>
@@ -32,7 +32,7 @@
 
 <p><img src="assets/identity-v2/section-02.svg" alt="Sobre o projeto" width="100%"></p>
 
-O repositório **TAPWM** reúne a coleção progressiva de projetos práticos desenvolvidos ao longo da disciplina de programação web na **Fatec Sorocaba**. A estrutura de pastas acompanha a evolução técnica do curso: começa com lógica, objetos e eventos interativos no navegador (Atividades 10 a 15), avança para programação assíncrona com *Callbacks* e *Promises* em JavaScript (Atividade 17) e culmina na construção de aplicações servidoras com **Node.js, Express e views EJS** (Atividades 18 em diante).
+O repositório **TAPWM** reúne a coleção progressiva de projetos práticos desenvolvidos ao longo da disciplina de programação web na **Fatec Sorocaba**. A estrutura de pastas acompanha a evolução técnica do curso, começa com lógica, objetos e eventos interativos no navegador (Atividades 10 a 15), avança para programação assíncrona com *Callbacks* e *Promises* em JavaScript (Atividade 17) e culmina na construção de aplicações servidoras com **Node.js, Express e views EJS** (Atividades 18 em diante).
 
 <a id="principais-módulos-e-atividades"></a>
 
@@ -107,6 +107,6 @@ npm start
 
 <table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Aranha" width="130"></td><td><strong>Aranha</strong><br>Construção de conexões, em referência à web.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/identity-v2/banner.png">Banner em PNG</a></td></tr></table>
 
-Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação: [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
+Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação, [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
 
 <p align="center"><a href="#top">Voltar ao topo ↑</a> · <a href="https://github.com/arthurlynow098">Arthur Entsev</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a></p>
